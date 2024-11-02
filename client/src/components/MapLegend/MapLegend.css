@@ -1,0 +1,52 @@
+.mapLegend {
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    font-size: 32px;
+    transition: .2s;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+
+    h1 {
+        font-size: 34px;
+        margin: 0 !important;
+    }
+}
+
+.legendRow {
+    display: flex;
+    gap: 20px;
+    line-height: 20px;
+}
+
+.legendBox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.legendGreenBox {
+    background-color: rgb(0, 255, 0);
+}
+
+.legendBlueBox {
+    background-color: blue;
+}
+
+.legendRedBox {
+    background-color: red;
+}
+
+.legendDescription {
+    font-size: 20px;
+
+    span {
+        color: rgb(229, 196, 81);
+        text-shadow: 0px 0px 1px gray;
+    }
+}

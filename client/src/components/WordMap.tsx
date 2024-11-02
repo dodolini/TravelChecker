@@ -5,6 +5,8 @@ import {
   Geographies,
   Geography,
 } from 'react-simple-maps';
+import InfoModal from './InfoModal/InfoModal';
+import MapLegend from './MapLegend/MapLegend';
 
 interface GeoProperties {
   name: string; 
@@ -182,7 +184,8 @@ const WorldMap: React.FC = () => {
           }
         </Geographies>
       </ComposableMap>
-      <button className='infoButton'><i className="fa-solid fa-circle-info"></i></button>
+      <MapLegend/>
+      <InfoModal/>
     </div>
   );
 };
